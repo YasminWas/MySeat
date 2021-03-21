@@ -1,0 +1,18 @@
+public class TestPhoneContact
+{
+    public TestPhoneContact(){
+
+    }
+
+    public void TestPhoneContactCreation(){
+        String fname = "Fred";
+        String lname ="Flinstone";
+        String phone = "800-555-1212";
+        String email = "fred@knox.edu";
+        PhoneContact t1 = new PhoneContact();
+        System.out.printf("Phone contact refrrence is %H\n", t1);
+        PhoneContact t2 = new PhoneContact(fname, lname, phone, email);
+        System.out.printf("Phone contact: \n Name = %s\n Phone = %s\n Email = %s\n", t2.getName(), t2.getPhoneNum(), t2.getEmailAddr());
+        
+    }
+}
